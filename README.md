@@ -4,22 +4,20 @@ RavenDB AI Assistant is a simple HTTP server that acts as a middleware between a
 
 ## Features
 
-- Secure handling of sensitive information through appsettings.json and environment variables
-- CORS support for cross-origin requests
 - Logging for better debugging and monitoring
 - Error handling and appropriate status codes
 - Easy configuration for different environments
 
 ## Prerequisites
 
-- .NET 6.0 SDK or later
+- .NET 8.0 SDK or later
 - An Azure account with Promptflow set up
 
 ## Setup
 
 1. Clone the repository:
    ```
-   git clone https://github.com/yourusername/ravendb-ai-assistant.git
+   git clone https://github.com/ArieSLV/ravendb-ai-assistant.git
    cd ravendb-ai-assistant
    ```
 
@@ -38,12 +36,12 @@ RavenDB AI Assistant is a simple HTTP server that acts as a middleware between a
        }
      },
      "AllowedHosts": "*",
-     "AzurePromptflowEndpoint": "https://your-azure-endpoint.com",
+     "AzurePromptflowEndpoint": "https://azure-endpoint.com",
      "AllowedOrigins": "*",
      "Port": 5000
    }
    ```
-   Replace `https://your-azure-endpoint.com` with your actual Azure Promptflow endpoint.
+   Replace `https://azure-endpoint.com` with your actual Azure Promptflow endpoint.
 
 ## Running the server
 
